@@ -1,0 +1,23 @@
+{
+  "generated_at": "2025-01-15T07:00:00Z",
+  "espresso": {
+    "headline": "Anthropic releases Claude 4 with 200K context window",
+    "body": "Anthropic has released Claude 4, significantly outperforming previous models on coding and reasoning benchmarks. The model supports a 200K token context window and is available via API immediately. Early adopters are already shipping production agents built on top of it.",
+    "source_url": "https://anthropic.com"
+  },
+  "cold_brew": {
+    "title": "React Server Components — the mental model that actually clicks",
+    "summary": "React Server Components move data fetching to the server, eliminating the client-side waterfall problem entirely. Unlike SSR, RSCs never ship JavaScript to the browser, making them a fundamentally new primitive rather than an optimisation of existing patterns.",
+    "takeaways": [
+      "Server components run only on the server — zero JS sent to the browser",
+      "They can directly access databases without an API layer in between",
+      "Client and server components can be mixed in the same component tree"
+    ],
+    "source_url": "https://react.dev/blog/2023/03/22/react-labs-what-we-have-been-working-on"
+  },
+  "pastry": {
+    "title": "shadcn/ui — copy-paste components with zero lock-in",
+    "why_it_matters": "Unlike traditional component libraries, shadcn/ui gives you the actual source code — you own it completely. Built on Tailwind and Radix primitives, it has become the default choice for modern Next.js projects.",
+    "link": "https://github.com/shadcn-ui/ui"
+  }
+}

@@ -1,0 +1,9 @@
+httpx
+feedparser
+anthropic
+scikit-learn
+pydantic
+fastapi
+uvicorn
+supabase
+python-dotenv
