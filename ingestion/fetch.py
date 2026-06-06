@@ -55,17 +55,33 @@ async def fetch_hackernews():
                 })
     return items
 
+async def fetch_devto():
+    items = []
+    async with httpx.AsyncClient() as client:
+        response = await client.get(
+            "https://dev.to/api/articles",
+            params={"top": 1, "per_page": 10},
+            headers={"User-Agent": "personal-cafe-bot"}
+        )
+        for article in response.json():
+            items.append({
+                "title": article["title"],
+                "summary": article.get("description", "No description")[:300],
+                "url": article["url"],
+                "source": "devto"
+            })
+    return items
+
+
 async def main():
     print("Fetching data...")
-    github, arxiv, hn = await asyncio.gather(
+    github, arxiv, hn, devto = await asyncio.gather(
         fetch_github_trending(),
         fetch_arxiv(),
-        fetch_hackernews()
+        fetch_hackernews(),
+        fetch_devto()
     )
-    all_items = github + arxiv + hn
+    all_items = github + arxiv + hn + devto
     with open("data/raw_items.json", "w") as f:
         json.dump(all_items, f, indent=2)
     print(f"Done. Saved {len(all_items)} items to data/raw_items.json")
-
-if __name__ == "__main__":
-    asyncio.run(main())
