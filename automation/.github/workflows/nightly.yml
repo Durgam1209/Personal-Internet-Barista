@@ -2,14 +2,16 @@ name: Nightly Brew
 
 on:
   schedule:
-    - cron: '0 2 * * *'   # runs every night at 2am
-  workflow_dispatch:        # lets you run it manually too
+    - cron: '0 2 * * *'
+  workflow_dispatch:
 
 jobs:
   brew:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout repo
+        uses: actions/checkout@v3
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -21,7 +23,15 @@ jobs:
 
       - name: Run pipeline
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
         run: python automation/run_pipeline.py
+
+      - name: Commit digest.json
+        run: |
+          git config user.name "personal-cafe-bot"
+          git config user.email "bot@personal.cafe"
+          git add data/digest.json
+          git diff --staged --quiet || git commit -m "daily brew $(date +'%Y-%m-%d')"
+          git push

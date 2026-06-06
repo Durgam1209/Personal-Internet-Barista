@@ -1,68 +1,86 @@
 [
   {
-    "title": "DigitalPlatDev/FreeDomain",
-    "summary": "DigitalPlat FreeDomain: Free Domain For Everyone",
-    "url": "https://github.com/DigitalPlatDev/FreeDomain",
+    "title": "openclaw/openclaw",
+    "summary": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. \ud83e\udd9e ",
+    "url": "https://github.com/openclaw/openclaw",
     "source": "github"
   },
   {
-    "title": "msitarzewski/agency-agents",
-    "summary": "A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.",
-    "url": "https://github.com/msitarzewski/agency-agents",
+    "title": "x1xhlol/system-prompts-and-models-of-ai-tools",
+    "summary": "FULL Augment Code, Claude Code, Cluely, CodeBuddy, Comet, Cursor, Devin AI, Junie, Kiro, Leap.new, Lovable, Manus, NotionAI, Orchids.app, Perplexity, Poke, Qoder, Replit, Same.dev, Trae, Traycer AI, VSCode Agent, Warp.dev, Windsurf, Xcode, Z.ai Code, Dia & v0. (And other Open Sourced) System Prompts, Internal Tools & AI Models",
+    "url": "https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools",
     "source": "github"
   },
   {
-    "title": "garrytan/gstack",
-    "summary": "Use Garry Tan's exact Claude Code setup: 23 opinionated tools that serve as CEO, Designer, Eng Manager, Release Manager, Doc Engineer, and QA",
-    "url": "https://github.com/garrytan/gstack",
+    "title": "google-gemini/gemini-cli",
+    "summary": "An open-source AI agent that brings the power of Gemini directly into your terminal.",
+    "url": "https://github.com/google-gemini/gemini-cli",
     "source": "github"
   },
   {
-    "title": "punkpeye/awesome-mcp-servers",
-    "summary": "A collection of MCP servers.",
-    "url": "https://github.com/punkpeye/awesome-mcp-servers",
+    "title": "karpathy/autoresearch",
+    "summary": "AI agents running research on single-GPU nanochat training automatically",
+    "url": "https://github.com/karpathy/autoresearch",
     "source": "github"
   },
   {
-    "title": "unclecode/crawl4ai",
-    "summary": "\ud83d\ude80\ud83e\udd16 Crawl4AI: Open-source LLM Friendly Web Crawler & Scraper. Don't be shy, join here: https://discord.gg/jP8KfhDhyN",
-    "url": "https://github.com/unclecode/crawl4ai",
+    "title": "gsd-build/get-shit-done",
+    "summary": "A light-weight and powerful meta-prompting, context engineering and spec-driven development system for Claude Code by T\u00c2CHES.",
+    "url": "https://github.com/gsd-build/get-shit-done",
     "source": "github"
   },
   {
-    "title": "666ghj/MiroFish",
-    "summary": "A Simple and Universal Swarm Intelligence Engine, Predicting Anything. \u7b80\u6d01\u901a\u7528\u7684\u7fa4\u4f53\u667a\u80fd\u5f15\u64ce\uff0c\u9884\u6d4b\u4e07\u7269",
-    "url": "https://github.com/666ghj/MiroFish",
+    "title": "karpathy/nanochat",
+    "summary": "The best ChatGPT that $100 can buy.",
+    "url": "https://github.com/karpathy/nanochat",
     "source": "github"
   },
   {
-    "title": "aaif-goose/goose",
-    "summary": "an open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM",
-    "url": "https://github.com/aaif-goose/goose",
+    "title": "exo-explore/exo",
+    "summary": "Run frontier AI locally.",
+    "url": "https://github.com/exo-explore/exo",
     "source": "github"
   },
   {
-    "title": "asgeirtj/system_prompts_leaks",
-    "summary": "Extracted system prompts from Anthropic - Claude Code, Claude Design, Opus 4.8, Sonnet 4.6. OpenAI - ChatGPT 5.5 Thinking, GPT 5.5 Instant, Codex, Google - Gemini - 3.5 Flash, 3.1 Pro, Antigravity, xAI - Grok, Cursor, Copilot, VS Code, Perplexity, and more. Updated regularly.",
-    "url": "https://github.com/asgeirtj/system_prompts_leaks",
+    "title": "PDFMathTranslate/PDFMathTranslate",
+    "summary": "[EMNLP 2025 Demo] PDF scientific paper translation with preserved formats - \u57fa\u4e8e AI \u5b8c\u6574\u4fdd\u7559\u6392\u7248\u7684 PDF \u6587\u6863\u5168\u6587\u53cc\u8bed\u7ffb\u8bd1\uff0c\u652f\u6301 Google/DeepL/Ollama/OpenAI \u7b49\u670d\u52a1\uff0c\u63d0\u4f9b CLI/GUI/MCP/Docker/Zotero",
+    "url": "https://github.com/PDFMathTranslate/PDFMathTranslate",
     "source": "github"
   },
   {
-    "title": "PatrickJS/awesome-cursorrules",
-    "summary": "\ud83d\udcc4  Configuration files that enhance Cursor AI editor experience with custom rules and behaviors",
-    "url": "https://github.com/PatrickJS/awesome-cursorrules",
+    "title": "78/xiaozhi-esp32",
+    "summary": "An MCP-based chatbot | \u4e00\u4e2a\u57fa\u4e8eMCP\u7684\u804a\u5929\u673a\u5668\u4eba",
+    "url": "https://github.com/78/xiaozhi-esp32",
     "source": "github"
   },
   {
-    "title": "vercel-labs/agent-browser",
-    "summary": "Browser automation CLI for AI agents",
-    "url": "https://github.com/vercel-labs/agent-browser",
+    "title": "tobi/qmd",
+    "summary": "mini cli search engine for your docs, knowledge bases, meeting notes, whatever. Tracking current sota approaches while being all local",
+    "url": "https://github.com/tobi/qmd",
     "source": "github"
+  },
+  {
+    "title": "GrapheneOS user reported to authorities for using GrapheneOS",
+    "summary": "No summary",
+    "url": "https://discuss.grapheneos.org/d/36134-grapheneos-user-reported-to-authorities-for-using-grapheneos",
+    "source": "hackernews"
+  },
+  {
+    "title": "Zig Zen Update",
+    "summary": "No summary",
+    "url": "https://codeberg.org/ziglang/zig/commit/621844bde551ee1a9b8142d7d146d1fa804247a2",
+    "source": "hackernews"
   },
   {
     "title": "How LLMs work",
     "summary": "No summary",
     "url": "https://www.0xkato.xyz/how-llms-actually-work/",
+    "source": "hackernews"
+  },
+  {
+    "title": "The Smart TV in Your LivingRoom Is a Node in the AIScraping Economy",
+    "summary": "No summary",
+    "url": "https://blog.includesecurity.com/2026/06/the-smart-tv-in-your-livingroom-is-a-node-in-the-aiscraping-economy/",
     "source": "hackernews"
   },
   {
@@ -72,51 +90,33 @@
     "source": "hackernews"
   },
   {
-    "title": "Pre-Modern Armies for Worldbuilders, Part I: Why They Fight",
-    "summary": "No summary",
-    "url": "https://acoup.blog/2026/06/05/collections-pre-modern-armies-for-worldbuilders-part-i-why-they-fight/",
-    "source": "hackernews"
-  },
-  {
-    "title": "The back cover of C++: The Language raises questions not answered by front cover",
-    "summary": "No summary",
-    "url": "https://devblogs.microsoft.com/oldnewthing/20260605-01/?p=112391",
-    "source": "hackernews"
-  },
-  {
     "title": "S&P 500 rejects SpaceX, also blocking entry for OpenAI and Anthropic",
     "summary": "No summary",
     "url": "https://arstechnica.com/tech-policy/2026/06/sp-500-blocks-fast-spacex-entry-wont-waive-rule-for-unprofitable-ai-firms/",
     "source": "hackernews"
   },
   {
-    "title": "Ten Years of Franz",
+    "title": "Do Women's Mate Preferences Change Across the Ovulatory Cycle? A Meta-Analysis [pdf]",
     "summary": "No summary",
-    "url": "https://meetfranz.com/blog/ten-years-of-franz",
+    "url": "https://www.martiehaselton.com/_files/ugd/3ae410_aeb76edab75f457aae0c14c4c68d93c0.pdf",
     "source": "hackernews"
   },
   {
-    "title": "Lockdown Mode",
+    "title": "Pre-Modern Armies for Worldbuilders, Part I: Why They Fight",
     "summary": "No summary",
-    "url": "https://help.openai.com/en/articles/20001061-lockdown-mode",
-    "source": "hackernews"
-  },
-  {
-    "title": "Astronauts told to return to ISS after sheltering over air leak repairs",
-    "summary": "No summary",
-    "url": "https://www.bbc.com/news/live/c4g44ew3g1kt",
-    "source": "hackernews"
-  },
-  {
-    "title": "pg_durable: Microsoft open sources in-database durable execution",
-    "summary": "No summary",
-    "url": "https://github.com/microsoft/pg_durable",
+    "url": "https://acoup.blog/2026/06/05/collections-pre-modern-armies-for-worldbuilders-part-i-why-they-fight/",
     "source": "hackernews"
   },
   {
     "title": "New method turns ocean water into drinking water, without waste",
     "summary": "No summary",
     "url": "https://www.rochester.edu/newscenter/what-is-desalination-definition-ocean-water-704732/",
+    "source": "hackernews"
+  },
+  {
+    "title": "Social Cache Busting",
+    "summary": "No summary",
+    "url": "https://www.autodidacts.io/social-cache-busting/",
     "source": "hackernews"
   }
 ]

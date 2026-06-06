@@ -1,0 +1,23 @@
+{
+  "generated_at": "2026-06-06T17:47:27.806174",
+  "espresso": {
+    "headline": "Engineers can run frontier AI locally, translate PDFs with layout preserved, and search internal docs via a local CLI tool.",
+    "body": "The exo-explore/exo repository enables running frontier AI models on a single machine. This lets teams avoid cloud costs and latency while experimenting with the latest models. Engineers should evaluate the tool for their hardware constraints and integrate it into their development pipelines.",
+    "source_url": "https://github.com/exo-explore/exo"
+  },
+  "cold_brew": {
+    "title": "PDFMathTranslate",
+    "summary": "PDFMathTranslate is an EMNLP 2025 demo that translates the complete text of scientific PDFs while keeping the original layout intact, using services such as Google, DeepL, Ollama, or OpenAI, and offers CLI, GUI, Docker, MCP, and Zotero interfaces.",
+    "takeaways": [
+      "Preserving layout during translation requires parsing the PDF's content streams and re\u2011encoding text objects without reflowing the visual structure.",
+      "The tool supports multiple translation back\u2011ends via CLI arguments, making it platform\u2011agnostic and adaptable to different service APIs.",
+      "Packaging the pipeline in a Docker container ensures reproducible execution across diverse environments."
+    ],
+    "source_url": "https://github.com/PDFMathTranslate/PDFMathTranslate"
+  },
+  "pastry": {
+    "title": "tobi/qmd",
+    "why_it_matters": "tobi/qmd provides a lightweight local CLI search engine that indexes and queries documentation, knowledge bases, and meeting notes. It solves the need for fast, private search across internal resources without relying on external SaaS services, benefiting engineers and technical teams.",
+    "link": "https://github.com/tobi/qmd"
+  }
+}

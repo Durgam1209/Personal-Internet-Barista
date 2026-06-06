@@ -3,21 +3,17 @@ import sys
 import os
 from datetime import datetime
 
+
 def run_step(name, script_path):
     print(f"\n{'='*40}")
     print(f"RUNNING: {name}")
     print(f"{'='*40}")
-    
-    result = subprocess.run(
-        [sys.executable, script_path],
-        capture_output=False
-    )
-    
+    result = subprocess.run([sys.executable, script_path])
     if result.returncode != 0:
-        print(f"FAILED: {name}")
+        print(f"❌ FAILED: {name}")
         sys.exit(1)
-    
-    print(f"DONE: {name}")
+    print(f"✅ DONE: {name}")
+
 
 if __name__ == "__main__":
     print(f"\n☕ personal.cafe pipeline started at {datetime.now().strftime('%H:%M:%S')}")
