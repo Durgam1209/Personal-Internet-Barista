@@ -1,122 +1,182 @@
 [
   {
-    "title": "openclaw/openclaw",
-    "summary": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. \ud83e\udd9e ",
-    "url": "https://github.com/openclaw/openclaw",
+    "title": "Everlyn-Labs/Everlyn-1",
+    "summary": "The first open autoregressive foundational video AI model.",
+    "url": "https://github.com/Everlyn-Labs/Everlyn-1",
     "source": "github"
   },
   {
-    "title": "x1xhlol/system-prompts-and-models-of-ai-tools",
-    "summary": "FULL Augment Code, Claude Code, Cluely, CodeBuddy, Comet, Cursor, Devin AI, Junie, Kiro, Leap.new, Lovable, Manus, NotionAI, Orchids.app, Perplexity, Poke, Qoder, Replit, Same.dev, Trae, Traycer AI, VSCode Agent, Warp.dev, Windsurf, Xcode, Z.ai Code, Dia & v0. (And other Open Sourced) System Prompts, Internal Tools & AI Models",
-    "url": "https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools",
+    "title": "GAIR-NLP/O1-Journey",
+    "summary": "O1 Replication Journey",
+    "url": "https://github.com/GAIR-NLP/O1-Journey",
     "source": "github"
   },
   {
-    "title": "google-gemini/gemini-cli",
-    "summary": "An open-source AI agent that brings the power of Gemini directly into your terminal.",
-    "url": "https://github.com/google-gemini/gemini-cli",
+    "title": "lucidrains/self-rewarding-lm-pytorch",
+    "summary": "Implementation of the training framework proposed in Self-Rewarding Language Model, from MetaAI",
+    "url": "https://github.com/lucidrains/self-rewarding-lm-pytorch",
     "source": "github"
   },
   {
-    "title": "karpathy/autoresearch",
-    "summary": "AI agents running research on single-GPU nanochat training automatically",
-    "url": "https://github.com/karpathy/autoresearch",
+    "title": "maximal/http-267",
+    "summary": "HTTP 267 Doubtful But Okay",
+    "url": "https://github.com/maximal/http-267",
     "source": "github"
   },
   {
-    "title": "gsd-build/get-shit-done",
-    "summary": "A light-weight and powerful meta-prompting, context engineering and spec-driven development system for Claude Code by T\u00c2CHES.",
-    "url": "https://github.com/gsd-build/get-shit-done",
+    "title": "Devin-AXIS/A2V",
+    "summary": "A2V: Next-Gen AI Value Compute Protocol.                                                                                 ",
+    "url": "https://github.com/Devin-AXIS/A2V",
     "source": "github"
   },
   {
-    "title": "karpathy/nanochat",
-    "summary": "The best ChatGPT that $100 can buy.",
-    "url": "https://github.com/karpathy/nanochat",
+    "title": "open-gigaai/giga-train",
+    "summary": "GigaTrain: An Efficient and Scalable Training Framework for AI Models",
+    "url": "https://github.com/open-gigaai/giga-train",
     "source": "github"
   },
   {
-    "title": "exo-explore/exo",
-    "summary": "Run frontier AI locally.",
-    "url": "https://github.com/exo-explore/exo",
+    "title": "levkk/rwf",
+    "summary": "Comprehensive framework for building web applications in Rust.",
+    "url": "https://github.com/levkk/rwf",
     "source": "github"
   },
   {
-    "title": "PDFMathTranslate/PDFMathTranslate",
-    "summary": "[EMNLP 2025 Demo] PDF scientific paper translation with preserved formats - \u57fa\u4e8e AI \u5b8c\u6574\u4fdd\u7559\u6392\u7248\u7684 PDF \u6587\u6863\u5168\u6587\u53cc\u8bed\u7ffb\u8bd1\uff0c\u652f\u6301 Google/DeepL/Ollama/OpenAI \u7b49\u670d\u52a1\uff0c\u63d0\u4f9b CLI/GUI/MCP/Docker/Zotero",
-    "url": "https://github.com/PDFMathTranslate/PDFMathTranslate",
+    "title": "henry123-boy/SpaTracker",
+    "summary": "[CVPR 2024 Highlight] Official PyTorch implementation of SpatialTracker: Tracking Any 2D Pixels in 3D Space",
+    "url": "https://github.com/henry123-boy/SpaTracker",
     "source": "github"
   },
   {
-    "title": "78/xiaozhi-esp32",
-    "summary": "An MCP-based chatbot | \u4e00\u4e2a\u57fa\u4e8eMCP\u7684\u804a\u5929\u673a\u5668\u4eba",
-    "url": "https://github.com/78/xiaozhi-esp32",
+    "title": "composecraft/composecraft",
+    "summary": "No description",
+    "url": "https://github.com/composecraft/composecraft",
     "source": "github"
   },
   {
-    "title": "tobi/qmd",
-    "summary": "mini cli search engine for your docs, knowledge bases, meeting notes, whatever. Tracking current sota approaches while being all local",
-    "url": "https://github.com/tobi/qmd",
+    "title": "nuno-faria/tetris-sql",
+    "summary": "Using SQL's Turing Completeness to Build Tetris",
+    "url": "https://github.com/nuno-faria/tetris-sql",
     "source": "github"
   },
   {
-    "title": "GrapheneOS user reported to authorities for using GrapheneOS",
+    "title": "Claude Fable 5",
     "summary": "No summary",
-    "url": "https://discuss.grapheneos.org/d/36134-grapheneos-user-reported-to-authorities-for-using-grapheneos",
+    "url": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
     "source": "hackernews"
   },
   {
-    "title": "Zig Zen Update",
+    "title": "System Card: Claude Fable 5 and Claude Mythos 5 [pdf]",
     "summary": "No summary",
-    "url": "https://codeberg.org/ziglang/zig/commit/621844bde551ee1a9b8142d7d146d1fa804247a2",
+    "url": "https://www-cdn.anthropic.com/d00db56fa754a1b115b6dd7cb2e3c342ee809620.pdf",
     "source": "hackernews"
   },
   {
-    "title": "How LLMs work",
+    "title": "Making Graphics Like it's 1993",
     "summary": "No summary",
-    "url": "https://www.0xkato.xyz/how-llms-actually-work/",
+    "url": "https://staniks.github.io/articles/catlantean-3d-blog-1/",
     "source": "hackernews"
   },
   {
-    "title": "The Smart TV in Your LivingRoom Is a Node in the AIScraping Economy",
+    "title": "A giant star may have destroyed itself in one of the rarest explosions",
     "summary": "No summary",
-    "url": "https://blog.includesecurity.com/2026/06/the-smart-tv-in-your-livingroom-is-a-node-in-the-aiscraping-economy/",
+    "url": "https://phys.org/news/2026-05-giant-star-destroyed-universe-rarest.html",
     "source": "hackernews"
   },
   {
-    "title": "The intracies of modern camera lens repair (2024)",
+    "title": "Microsoft's open source tools were hacked to steal passwords of AI developers",
     "summary": "No summary",
-    "url": "https://salvagedcircuitry.com/sigma-45mm.html",
+    "url": "https://techcrunch.com/2026/06/08/microsofts-open-source-tools-were-hacked-to-steal-passwords-of-ai-developers/",
     "source": "hackernews"
   },
   {
-    "title": "S&P 500 rejects SpaceX, also blocking entry for OpenAI and Anthropic",
+    "title": "Biff.core: system composition for Clojure web apps",
     "summary": "No summary",
-    "url": "https://arstechnica.com/tech-policy/2026/06/sp-500-blocks-fast-spacex-entry-wont-waive-rule-for-unprofitable-ai-firms/",
+    "url": "https://biffweb.com/p/core/",
     "source": "hackernews"
   },
   {
-    "title": "Do Women's Mate Preferences Change Across the Ovulatory Cycle? A Meta-Analysis [pdf]",
+    "title": "Can LLMs Beat Classical Hyperparameter Optimization Algorithms?",
     "summary": "No summary",
-    "url": "https://www.martiehaselton.com/_files/ugd/3ae410_aeb76edab75f457aae0c14c4c68d93c0.pdf",
+    "url": "https://arxiv.org/abs/2603.24647",
     "source": "hackernews"
   },
   {
-    "title": "Pre-Modern Armies for Worldbuilders, Part I: Why They Fight",
-    "summary": "No summary",
-    "url": "https://acoup.blog/2026/06/05/collections-pre-modern-armies-for-worldbuilders-part-i-why-they-fight/",
+    "title": "Launch HN: Transload (YC P26) \u2013 Measuring freight items with CCTV",
+    "summary": "Hi HN \u2014 we\u2019re Julius, Jago, and Nils, and we\u2019re building transload (transload.io).<p>transload helps LTL trucking companies measure freight dimensions using the security cameras already installed in their terminals. Instead of sending shipments through a dedicated dimensioning station, we measure th",
+    "url": "https://news.ycombinator.com/item?id=48463273",
     "source": "hackernews"
   },
   {
-    "title": "New method turns ocean water into drinking water, without waste",
+    "title": "Is Grep All You Need? How Agent Harnesses Reshape Agentic Search",
     "summary": "No summary",
-    "url": "https://www.rochester.edu/newscenter/what-is-desalination-definition-ocean-water-704732/",
+    "url": "https://arxiv.org/abs/2605.15184",
     "source": "hackernews"
   },
   {
-    "title": "Social Cache Busting",
+    "title": "I Think Rutger Bregman and the School for Moral Ambition Are Full of Shit",
     "summary": "No summary",
-    "url": "https://www.autodidacts.io/social-cache-busting/",
+    "url": "https://louwrentius.com/i-think-rutger-bregman-the-school-for-moral-ambition-are-full-of-shit.html",
     "source": "hackernews"
+  },
+  {
+    "title": "Build a Realtime Translation App with Gemini Live API, LiveKit, & Google Cloud Run",
+    "summary": "Imagine speaking in English, and having listeners from all over the world hear you translated into...",
+    "url": "https://dev.to/googleai/build-a-realtime-translation-app-with-gemini-live-api-livekit-google-cloud-run-5474",
+    "source": "devto"
+  },
+  {
+    "title": "The Most Valuable Thing I Found in Tech Wasn't an Opportunity",
+    "summary": "TL;DR  As an international student in the United States, I joined tech communities hoping to find...",
+    "url": "https://dev.to/hemapriya_kanagala/the-most-valuable-thing-i-found-in-tech-wasnt-an-opportunity-2j83",
+    "source": "devto"
+  },
+  {
+    "title": "The perfect background music for Vibecoding...",
+    "summary": "While vibecoding, you sometimes need some background music. But music can also be a massive...",
+    "url": "https://dev.to/gdg/the-perfect-background-music-for-vibecoding-3edg",
+    "source": "devto"
+  },
+  {
+    "title": "The 'Prompt' Is Not a Skill \u2014 And We Need to Stop Pretending",
+    "summary": "Writing a prompt isn't engineering. It's typing.  You type what you want. The AI figures out the rest...",
+    "url": "https://dev.to/harsh2644/the-prompt-is-not-a-skill-and-we-need-to-stop-pretending-3m18",
+    "source": "devto"
+  },
+  {
+    "title": "Gubernator visual schema.",
+    "summary": "Excited to share the latest feature built for Gubernator (gbnt): Visual Stack Topology &amp;...",
+    "url": "https://dev.to/gde/gubernator-visual-schema-1dfc",
+    "source": "devto"
+  },
+  {
+    "title": "one last peek \ud83d\udc40\ud83c\udf75 docs, a demo, and a goodbye for now",
+    "summary": "Hello, I'm Maneshwar. I'm building git-lrc, a Micro AI code reviewer that runs on every commit. It is...",
+    "url": "https://dev.to/lovestaco/one-last-peek-docs-a-demo-and-a-goodbye-for-now-4ddk",
+    "source": "devto"
+  },
+  {
+    "title": "The Estimate That Became a Quote",
+    "summary": "I said \"maybe a couple days\" on a call last Tuesday. By Wednesday morning it was in a Jira ticket as...",
+    "url": "https://dev.to/evanlausier/the-estimate-that-became-a-quote-98m",
+    "source": "devto"
+  },
+  {
+    "title": "The Hidden Machinery Behind Background Jobs",
+    "summary": "This will be a boring article today, but I wanted to write it after talking to a developer who...",
+    "url": "https://dev.to/adamthedeveloper/the-hidden-machinery-behind-background-jobs-1g5a",
+    "source": "devto"
+  },
+  {
+    "title": "AI Bots Are Driving Up Your Hosting Bill. I have a WordPress fix",
+    "summary": "A client called me last month, half panicked, after getting an email from his hosting provider. The...",
+    "url": "https://dev.to/phalkmin/ai-bots-are-driving-up-your-hosting-bill-i-have-a-wordpress-fix-7ih",
+    "source": "devto"
+  },
+  {
+    "title": "The Loop Is Not the Product",
+    "summary": "A tweet landed on my timeline from Peter Steinberger \u2014 OpenClaw founder, now at OpenAI:   \"Here's...",
+    "url": "https://dev.to/dannwaneri/the-loop-is-not-the-product-466d",
+    "source": "devto"
   }
 ]

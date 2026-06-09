@@ -1,8 +1,17 @@
 import subprocess
 import sys
+import io
 import json
 import os
 from datetime import datetime
+
+# Force UTF-8 output encoding for Windows terminals
+if sys.platform.startswith('win'):
+    try:
+        sys.stdout.reconfigure(encoding='utf-8')
+        sys.stderr.reconfigure(encoding='utf-8')
+    except Exception:
+        pass
 
 LOG_FILE = "data/pipeline_log.json"
 

@@ -2,8 +2,9 @@ import fallback from "@/data/fallback.json";
 
 export async function getDigest() {
     try {
+        const apiUrl = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
         const res = await fetch(
-            "https://your-api.com/digest",
+            `${apiUrl}/digest`,
             {
                 cache: "no-store",
             }

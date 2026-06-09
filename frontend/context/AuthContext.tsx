@@ -1,11 +1,16 @@
 "use client";
 
 import React, { createContext, useContext, useEffect, useState, ReactNode } from "react";
-import { User, onAuthStateChanged } from "firebase/auth";
-import { auth, googleProvider, signInWithPopup, signOut } from "@/lib/firebase";
+import { useUser, useClerk } from "@clerk/nextjs";
+
+interface AuthUser {
+    displayName: string | null;
+    email: string | null;
+    photoURL: string | null;
+}
 
 interface AuthContextType {
-    user: User | null;
+    user: AuthUser | null;
     isGuest: boolean;
     loading: boolean;
     signInWithGoogle: () => Promise<void>;
@@ -16,51 +21,74 @@ interface AuthContextType {
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
 export function AuthProvider({ children }: { children: ReactNode }) {
-    const [user, setUser] = useState<User | null>(null);
+    const { isLoaded, isSignedIn, user: clerkUser } = useUser();
+    const { signOut } = useClerk();
     const [isGuest, setIsGuest] = useState(false);
-    const [loading, setLoading] = useState(true);
+    const [user, setUser] = useState<AuthUser | null>(null);
 
     useEffect(() => {
-        const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
-            setUser(currentUser);
-            if (currentUser) {
-                setIsGuest(false); // If they sign in with Google, clear guest status
-            }
-            setLoading(false);
-        });
-        return () => unsubscribe();
+        if (typeof window !== "undefined") {
+            const guest = localStorage.getItem("personal-cafe-guest") === "true";
+            setIsGuest(guest);
+        }
     }, []);
 
     const signInWithGoogle = async () => {
-        try {
-            await signInWithPopup(auth, googleProvider);
-        } catch (error) {
-            console.error("Error signing in with Google:", error);
-            throw error;
-        }
+        // Redirect the user to Clerk's sign-in page, which contains Google sign-in
+        window.location.href = "/sign-in";
     };
 
     const loginAsGuest = () => {
         setIsGuest(true);
+        if (typeof window !== "undefined") {
+            localStorage.setItem("personal-cafe-guest", "true");
+        }
     };
 
     const logout = async () => {
         try {
-            await signOut(auth);
+            await signOut();
             setIsGuest(false);
+            if (typeof window !== "undefined") {
+                localStorage.removeItem("personal-cafe-guest");
+            }
         } catch (error) {
-            console.error("Error signing out:", error);
+            console.warn("Error signing out:", error);
             throw error;
         }
     };
 
+    useEffect(() => {
+        if (isLoaded) {
+            if (isSignedIn && clerkUser) {
+                setUser({
+                    displayName: clerkUser.fullName || clerkUser.username || null,
+                    email: clerkUser.primaryEmailAddress?.emailAddress || null,
+                    photoURL: clerkUser.imageUrl || null,
+                });
+                setIsGuest(false); // Clear guest status if signed in
+                if (typeof window !== "undefined") {
+                    localStorage.removeItem("personal-cafe-guest");
+                }
+            } else {
+                setUser(null);
+            }
+        }
+    }, [isLoaded, isSignedIn, clerkUser]);
+
     return (
-        <AuthContext.Provider value={{ user, isGuest, loading, signInWithGoogle, loginAsGuest, logout }}>
+        <AuthContext.Provider value={{
+            user,
+            isGuest,
+            loading: !isLoaded,
+            signInWithGoogle,
+            loginAsGuest,
+            logout
+        }}>
             {children}
         </AuthContext.Provider>
     );
 }
-
 
 export function useAuth() {
     const context = useContext(AuthContext);

@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import fallback from "@/data/fallback.json";
 import SunlightBeams from "@/components/SunlightBeams";
 import SideAnimations from "@/components/SideAnimations";
+import { UserButton } from "@clerk/nextjs";
 
 // Saved Article type definition
 interface SavedArticle {
@@ -14,6 +15,62 @@ interface SavedArticle {
     title: string;
     subtitle: string;
     content: string;
+}
+
+function normalizeDigest(raw: any) {
+    if (!raw) return {
+        generated_at: new Date().toISOString(),
+        espresso: { headline: "Espresso Shot", body: "", source_url: "#" },
+        coldbrew: { title: "Cold Brew Deep Dive", summary: "", takeaways: [], source_url: "#" },
+        pastry: { title: "Daily Pastry", why_it_matters: "", link: "#" }
+    };
+
+    const generated_at = raw.generated_at || new Date().toISOString();
+
+    // Espresso
+    let espresso = { headline: "Espresso Shot", body: "", source_url: "#" };
+    if (typeof raw.espresso === 'string') {
+        espresso.body = raw.espresso;
+    } else if (raw.espresso && typeof raw.espresso === 'object') {
+        espresso.headline = raw.espresso.headline || "Espresso Shot";
+        espresso.body = raw.espresso.body || "";
+        espresso.source_url = raw.espresso.source_url || "#";
+    }
+
+    // Cold Brew / Coldbrew
+    let cold_brew_raw = raw.cold_brew || raw.coldbrew;
+    let coldbrew = {
+        title: "Cold Brew Deep Dive",
+        summary: "",
+        takeaways: [
+            "Deep dive into tech concepts",
+            "Analysis of engineering trends",
+            "Practical developer takeaways"
+        ],
+        source_url: "#"
+    };
+    if (typeof cold_brew_raw === 'string') {
+        coldbrew.summary = cold_brew_raw;
+    } else if (cold_brew_raw && typeof cold_brew_raw === 'object') {
+        coldbrew.title = cold_brew_raw.title || "Cold Brew Deep Dive";
+        coldbrew.summary = cold_brew_raw.summary || "";
+        coldbrew.takeaways = Array.isArray(cold_brew_raw.takeaways) 
+            ? cold_brew_raw.takeaways 
+            : [cold_brew_raw.takeaways || ""];
+        coldbrew.source_url = cold_brew_raw.source_url || "#";
+    }
+
+    // Pastry
+    let pastry = { title: "Daily Pastry", why_it_matters: "", link: "#" };
+    if (typeof raw.pastry === 'string') {
+        pastry.why_it_matters = raw.pastry;
+    } else if (raw.pastry && typeof raw.pastry === 'object') {
+        pastry.title = raw.pastry.title || "Daily Pastry";
+        pastry.why_it_matters = raw.pastry.why_it_matters || "";
+        pastry.link = raw.pastry.link || raw.pastry.source_url || "#";
+    }
+
+    return { generated_at, espresso, coldbrew, pastry };
 }
 
 // CSS-based high-fidelity browser frame mockup
@@ -608,7 +665,7 @@ const SettingsDashboard = ({ preferences, setPreferences }: { preferences: any; 
 
 export default function Home() {
     const { user, isGuest, loading, logout } = useAuth();
-    const [digest, setDigest] = useState(fallback);
+    const [digest, setDigest] = useState<any>(() => normalizeDigest(fallback));
     const [isBrewing, setIsBrewing] = useState(false);
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     
@@ -643,10 +700,11 @@ export default function Home() {
     useEffect(() => {
         async function loadDigest() {
             try {
-                const res = await fetch("https://your-api.com/digest", { cache: "no-store" });
+                const apiUrl = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
+                const res = await fetch(`${apiUrl}/digest`, { cache: "no-store" });
                 if (res.ok) {
                     const data = await res.json();
-                    setDigest(data);
+                    setDigest(normalizeDigest(data));
                 }
             } catch (err) {
             }
@@ -672,11 +730,11 @@ export default function Home() {
         setIsBrewing(true);
         setTimeout(() => {
             setIsBrewing(false);
-            setDigest({
+            setDigest(normalizeDigest({
                 espresso: "Anthropic has released Claude 3.5 Sonnet, establishing a new industry benchmark for coding and reasoning tasks. Dev tools are integrating it dynamically into agent workspaces. Teams report up to 2x speedups in code generation.",
                 coldbrew: "We are observing a massive trend where software engineering shifts from manual syntax composition to high-level orchestration of AI systems. Understanding Model Context Protocol (MCP) is key to building context-aware applications.",
                 pastry: "Lucide Icons - A beautiful, open-source icon set that has become the industry standard for modern web apps. Perfect for clean, minimalist UIs like the one you're looking at right now."
-            });
+            }));
         }, 1500);
     };
 
@@ -971,11 +1029,7 @@ export default function Home() {
                         
                         <div className="flex items-center gap-4">
                             {user?.photoURL ? (
-                                <img 
-                                    src={user.photoURL} 
-                                    alt={user.displayName || "User"} 
-                                    className="w-8 h-8 rounded-full border border-cafe-border shadow"
-                                />
+                                <UserButton />
                             ) : isGuest ? (
                                 <span className="text-[11px] text-cafe-text-secondary bg-cafe-bg-secondary border border-cafe-border px-3 py-1.5 rounded-lg font-sans">
                                     Guest Mode
@@ -1026,7 +1080,7 @@ export default function Home() {
                                             <button 
                                                 onClick={(e) => {
                                                     e.preventDefault();
-                                                    toggleSave("espresso", "☕", "Espresso Shot", "The 3-Sentence Brief", digest.espresso);
+                                                    toggleSave("espresso", "☕", "Espresso Shot", "The 3-Sentence Brief", digest.espresso?.body || "");
                                                 }}
                                                 className="text-cafe-text-secondary/75 hover:text-cafe-accent transition cursor-pointer p-1 rounded hover:bg-cafe-bg-secondary/40"
                                                 title="Save article"
@@ -1044,11 +1098,19 @@ export default function Home() {
                                         </div>
                                     </div>
                                     
+                                    <h4 className="text-xl font-serif text-cafe-text-primary font-medium mb-3">
+                                        {digest.espresso?.headline}
+                                    </h4>
                                     <p className="text-cafe-text-secondary leading-relaxed font-sans mb-4 text-[15px]">
-                                        {digest.espresso}
+                                        {digest.espresso?.body}
                                     </p>
                                     
-                                    <a href="#" className="inline-flex items-center gap-1.5 text-xs font-bold text-cafe-text-secondary/80 hover:text-cafe-accent transition-colors tracking-wider">
+                                    <a 
+                                        href={digest.espresso?.source_url || "#"} 
+                                        target="_blank" 
+                                        rel="noopener noreferrer" 
+                                        className="inline-flex items-center gap-1.5 text-xs font-bold text-cafe-text-secondary/80 hover:text-cafe-accent transition-colors tracking-wider"
+                                    >
                                         DEEPEN THE SHOT <span className="text-sm">→</span>
                                     </a>
                                 </div>
@@ -1070,7 +1132,7 @@ export default function Home() {
                                         <button 
                                             onClick={(e) => {
                                                 e.preventDefault();
-                                                toggleSave("coldbrew", "🧊", "Cold Brew: Large Language Models as Optimizers", "The Deep Dive", digest.coldbrew);
+                                                toggleSave("coldbrew", "🧊", `Cold Brew: ${digest.coldbrew?.title || ""}`, "The Deep Dive", digest.coldbrew?.summary || "");
                                             }}
                                             className="text-cafe-text-secondary/75 hover:text-cafe-accent transition cursor-pointer p-1 rounded hover:bg-cafe-bg-secondary/45"
                                             title="Save article"
@@ -1088,27 +1150,41 @@ export default function Home() {
                                     </div>
                                     
                                     <h4 className="text-2xl font-serif text-cafe-text-primary font-medium mb-3">
-                                        Large Language Models as Optimizers (OPRO)
+                                        {digest.coldbrew?.title}
                                     </h4>
                                     
                                     <p className="text-cafe-text-secondary leading-relaxed font-sans mb-6 max-w-3xl text-[15px]">
-                                        {digest.coldbrew}
+                                        {digest.coldbrew?.summary}
                                     </p>
                                     
-                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-6 border-t border-cafe-border/40">
-                                        <div className="flex flex-col gap-1.5">
-                                            <span className="text-[10px] font-sans font-bold tracking-widest text-cafe-text-secondary/50">OBSERVATION</span>
-                                            <span className="text-[14px] font-sans text-cafe-text-secondary">Iteration cycles reduced by 80%.</span>
-                                        </div>
-                                        <div className="flex md:border-l md:border-cafe-border/50 md:pl-6 flex flex-col gap-1.5">
-                                            <span className="text-[10px] font-sans font-bold tracking-widest text-cafe-text-secondary/50">POTENTIAL</span>
-                                            <span className="text-[14px] font-sans text-cafe-text-secondary">Self-improving prompt pipelines.</span>
-                                        </div>
+                                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-6 border-t border-cafe-border/40">
+                                        {digest.coldbrew?.takeaways?.map((takeaway: string, idx: number) => (
+                                            <div key={idx} className={`flex flex-col gap-1.5 ${idx > 0 ? "md:border-l md:border-cafe-border/50 md:pl-6" : ""}`}>
+                                                <span className="text-[10px] font-sans font-bold tracking-widest text-cafe-text-secondary/50">TAKEAWAY {idx + 1}</span>
+                                                <span className="text-[14px] font-sans text-cafe-text-secondary">{takeaway}</span>
+                                            </div>
+                                        )) || (
+                                            <>
+                                                <div className="flex flex-col gap-1.5">
+                                                    <span className="text-[10px] font-sans font-bold tracking-widest text-cafe-text-secondary/50">OBSERVATION</span>
+                                                    <span className="text-[14px] font-sans text-cafe-text-secondary">Iteration cycles reduced.</span>
+                                                </div>
+                                                <div className="flex md:border-l md:border-cafe-border/50 md:pl-6 flex flex-col gap-1.5">
+                                                    <span className="text-[10px] font-sans font-bold tracking-widest text-cafe-text-secondary/50">POTENTIAL</span>
+                                                    <span className="text-[14px] font-sans text-cafe-text-secondary">Self-improving prompt pipelines.</span>
+                                                </div>
+                                            </>
+                                        )}
                                     </div>
-
-                                    <button className="mt-6 bg-cafe-accent hover:bg-cafe-accent-hover text-cafe-bg-sidebar font-sans font-semibold text-[11px] tracking-wider py-2.5 px-4 rounded-lg uppercase transition-all duration-200 active:scale-[0.98] cursor-pointer">
+ 
+                                    <a 
+                                        href={digest.coldbrew?.source_url || "#"}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="inline-block mt-6 bg-cafe-accent hover:bg-cafe-accent-hover text-cafe-bg-sidebar font-sans font-semibold text-[11px] tracking-wider py-2.5 px-4 rounded-lg uppercase transition-all duration-200 active:scale-[0.98] cursor-pointer text-center"
+                                    >
                                         VIEW FULL RESEARCH
-                                    </button>
+                                    </a>
                                 </div>
                             </div>
 
@@ -1131,7 +1207,7 @@ export default function Home() {
                                             <button 
                                                 onClick={(e) => {
                                                     e.preventDefault();
-                                                    toggleSave("pastry", "🥐", "Daily Pastry: Lucide Icons", "Gem of the Day", digest.pastry);
+                                                    toggleSave("pastry", "🥐", `Daily Pastry: ${digest.pastry?.title || ""}`, "Gem of the Day", digest.pastry?.why_it_matters || "");
                                                 }}
                                                 className="text-cafe-text-secondary/75 hover:text-cafe-accent transition cursor-pointer p-1 rounded hover:bg-cafe-bg-secondary/40"
                                                 title="Save article"
@@ -1149,11 +1225,11 @@ export default function Home() {
                                         </div>
                                         
                                         <h4 className="text-2xl font-serif text-cafe-text-primary font-medium mb-3">
-                                            Lucide Icons
+                                            {digest.pastry?.title}
                                         </h4>
                                         
                                         <p className="text-cafe-text-secondary leading-relaxed font-sans mb-6 text-[15px]">
-                                            {digest.pastry}
+                                            {digest.pastry?.why_it_matters}
                                         </p>
                                     </div>
                                     

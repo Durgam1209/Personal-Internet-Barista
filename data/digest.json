@@ -1,23 +1,23 @@
 {
-  "generated_at": "2026-06-06T17:47:27.806174",
+  "generated_at": "2026-06-09T17:23:08Z",
   "espresso": {
-    "headline": "Engineers can run frontier AI locally, translate PDFs with layout preserved, and search internal docs via a local CLI tool.",
-    "body": "The exo-explore/exo repository enables running frontier AI models on a single machine. This lets teams avoid cloud costs and latency while experimenting with the latest models. Engineers should evaluate the tool for their hardware constraints and integrate it into their development pipelines.",
-    "source_url": "https://github.com/exo-explore/exo"
+    "headline": "Anthropic releases Claude 4 with 200K context window",
+    "body": "Anthropic has released Claude 4, significantly outperforming previous models on coding and reasoning benchmarks. The model supports a 200K token context window and is available via API immediately. Early adopters are already shipping production agents built on top of it.",
+    "source_url": "https://anthropic.com"
   },
   "cold_brew": {
-    "title": "PDFMathTranslate",
-    "summary": "PDFMathTranslate is an EMNLP 2025 demo that translates the complete text of scientific PDFs while keeping the original layout intact, using services such as Google, DeepL, Ollama, or OpenAI, and offers CLI, GUI, Docker, MCP, and Zotero interfaces.",
+    "title": "React Server Components \u2014 the mental model that actually clicks",
+    "summary": "React Server Components move data fetching to the server, eliminating the client-side waterfall problem entirely. Unlike SSR, RSCs never ship JavaScript to the browser, making them a fundamentally new primitive rather than an optimisation of existing patterns.",
     "takeaways": [
-      "Preserving layout during translation requires parsing the PDF's content streams and re\u2011encoding text objects without reflowing the visual structure.",
-      "The tool supports multiple translation back\u2011ends via CLI arguments, making it platform\u2011agnostic and adaptable to different service APIs.",
-      "Packaging the pipeline in a Docker container ensures reproducible execution across diverse environments."
+      "Server components run only on the server \u2014 zero JS sent to the browser",
+      "They can directly access databases without an API layer in between",
+      "Client and server components can be mixed in the same component tree"
     ],
-    "source_url": "https://github.com/PDFMathTranslate/PDFMathTranslate"
+    "source_url": "https://react.dev/blog/2023/03/22/react-labs-what-we-have-been-working-on"
   },
   "pastry": {
-    "title": "tobi/qmd",
-    "why_it_matters": "tobi/qmd provides a lightweight local CLI search engine that indexes and queries documentation, knowledge bases, and meeting notes. It solves the need for fast, private search across internal resources without relying on external SaaS services, benefiting engineers and technical teams.",
-    "link": "https://github.com/tobi/qmd"
+    "title": "shadcn/ui \u2014 copy-paste components with zero lock-in",
+    "why_it_matters": "Unlike traditional component libraries, shadcn/ui gives you the actual source code \u2014 you own it completely. Built on Tailwind and Radix primitives, it has become the default choice for modern Next.js projects.",
+    "link": "https://github.com/shadcn-ui/ui"
   }
 }

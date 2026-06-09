@@ -85,3 +85,6 @@ async def main():
     with open("data/raw_items.json", "w") as f:
         json.dump(all_items, f, indent=2)
     print(f"Done. Saved {len(all_items)} items to data/raw_items.json")
+
+if __name__ == "__main__":
+    asyncio.run(main())

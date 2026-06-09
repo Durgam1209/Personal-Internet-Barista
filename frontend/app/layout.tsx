@@ -1,3 +1,4 @@
+import {ClerkProvider} from "@clerk/nextjs";
 import "./globals.css";
 import type { ReactNode } from "react";
 import { Lora, Inter } from "next/font/google";
@@ -28,10 +29,12 @@ export default function RootLayout({
     return (
         <html lang="en" className={`${lora.variable} ${inter.variable}`}>
             <body>
+              <ClerkProvider>
                 <AuthProvider>
-                    {children}
+                {children}
                 </AuthProvider>
+              </ClerkProvider>
             </body>
         </html>
     );
-}
+}
