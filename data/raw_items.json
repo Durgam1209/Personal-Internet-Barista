@@ -1,80 +1,98 @@
 [
   {
-    "title": "Everlyn-Labs/Everlyn-1",
-    "summary": "The first open autoregressive foundational video AI model.",
-    "url": "https://github.com/Everlyn-Labs/Everlyn-1",
+    "title": "The-Pocket/PocketFlow-Tutorial-Codebase-Knowledge",
+    "summary": "Pocket Flow: Codebase to Tutorial",
+    "url": "https://github.com/The-Pocket/PocketFlow-Tutorial-Codebase-Knowledge",
     "source": "github"
   },
   {
-    "title": "GAIR-NLP/O1-Journey",
-    "summary": "O1 Replication Journey",
-    "url": "https://github.com/GAIR-NLP/O1-Journey",
+    "title": "cgzirim/seek-tune",
+    "summary": "An implementation of Shazam's song recognition algorithm.",
+    "url": "https://github.com/cgzirim/seek-tune",
     "source": "github"
   },
   {
-    "title": "lucidrains/self-rewarding-lm-pytorch",
-    "summary": "Implementation of the training framework proposed in Self-Rewarding Language Model, from MetaAI",
-    "url": "https://github.com/lucidrains/self-rewarding-lm-pytorch",
+    "title": "cordx56/rustowl",
+    "summary": "Visualize Ownership and Lifetimes in Rust",
+    "url": "https://github.com/cordx56/rustowl",
     "source": "github"
   },
   {
-    "title": "maximal/http-267",
-    "summary": "HTTP 267 Doubtful But Okay",
-    "url": "https://github.com/maximal/http-267",
+    "title": "campsite/campsite",
+    "summary": "The Campsite monorepo",
+    "url": "https://github.com/campsite/campsite",
     "source": "github"
   },
   {
-    "title": "Devin-AXIS/A2V",
-    "summary": "A2V: Next-Gen AI Value Compute Protocol.                                                                                 ",
-    "url": "https://github.com/Devin-AXIS/A2V",
+    "title": "metavoiceio/metavoice-src",
+    "summary": "Foundational model for human-like, expressive TTS",
+    "url": "https://github.com/metavoiceio/metavoice-src",
     "source": "github"
   },
   {
-    "title": "open-gigaai/giga-train",
-    "summary": "GigaTrain: An Efficient and Scalable Training Framework for AI Models",
-    "url": "https://github.com/open-gigaai/giga-train",
+    "title": "lllyasviel/sd-forge-layerdiffuse",
+    "summary": "[WIP] Layer Diffusion for WebUI (via Forge)",
+    "url": "https://github.com/lllyasviel/sd-forge-layerdiffuse",
     "source": "github"
   },
   {
-    "title": "levkk/rwf",
-    "summary": "Comprehensive framework for building web applications in Rust.",
-    "url": "https://github.com/levkk/rwf",
+    "title": "groupultra/telegram-search",
+    "summary": "\ud83d\udd0d \u5bfc\u51fa\u5e76\u6a21\u7cca\u641c\u7d22 Telegram \u804a\u5929\u8bb0\u5f55 | Export and fuzzy search your Telegram chat history",
+    "url": "https://github.com/groupultra/telegram-search",
     "source": "github"
   },
   {
-    "title": "henry123-boy/SpaTracker",
-    "summary": "[CVPR 2024 Highlight] Official PyTorch implementation of SpatialTracker: Tracking Any 2D Pixels in 3D Space",
-    "url": "https://github.com/henry123-boy/SpaTracker",
-    "source": "github"
-  },
-  {
-    "title": "composecraft/composecraft",
+    "title": "gyoridavid/ai_agents_az",
     "summary": "No description",
-    "url": "https://github.com/composecraft/composecraft",
+    "url": "https://github.com/gyoridavid/ai_agents_az",
     "source": "github"
   },
   {
-    "title": "nuno-faria/tetris-sql",
-    "summary": "Using SQL's Turing Completeness to Build Tetris",
-    "url": "https://github.com/nuno-faria/tetris-sql",
+    "title": "karol-broda/snitch",
+    "summary": "a prettier way to inspect network connections",
+    "url": "https://github.com/karol-broda/snitch",
+    "source": "github"
+  },
+  {
+    "title": "browserbase/mcp-server-browserbase",
+    "summary": "Allow LLMs to control a browser with Browserbase and Stagehand",
+    "url": "https://github.com/browserbase/mcp-server-browserbase",
     "source": "github"
   },
   {
     "title": "Claude Fable 5",
-    "summary": "No summary",
+    "summary": "System Card [pdf]: <a href=\"https:&#x2F;&#x2F;www-cdn.anthropic.com&#x2F;d00db56fa754a1b115b6dd7cb2e3c342ee809620.pdf\" rel=\"nofollow\">https:&#x2F;&#x2F;www-cdn.anthropic.com&#x2F;d00db56fa754a1b115b6dd7cb2e3c3...</a>",
     "url": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
     "source": "hackernews"
   },
   {
-    "title": "System Card: Claude Fable 5 and Claude Mythos 5 [pdf]",
+    "title": "Apple's AI Can Now Change Your Passwords. What Could Possibly Go Wrong?",
     "summary": "No summary",
-    "url": "https://www-cdn.anthropic.com/d00db56fa754a1b115b6dd7cb2e3c342ee809620.pdf",
+    "url": "https://www.kylereddoch.me/blog/apples-ai-can-now-change-your-passwords-what-could-possibly-go-wrong/",
+    "source": "hackernews"
+  },
+  {
+    "title": "Ultrafast machine learning on FPGAs via Kolmogorov-Arnold Networks",
+    "summary": "No summary",
+    "url": "https://aarushgupta.io/posts/kan-fpga/",
     "source": "hackernews"
   },
   {
     "title": "Making Graphics Like it's 1993",
     "summary": "No summary",
     "url": "https://staniks.github.io/articles/catlantean-3d-blog-1/",
+    "source": "hackernews"
+  },
+  {
+    "title": "Google's 20% 'project' has become AI's 120% 'attention'",
+    "summary": "No summary",
+    "url": "https://joe.dev/posts/new-20pct-time/",
+    "source": "hackernews"
+  },
+  {
+    "title": "Test-case reducers are underappreciated debugging tools",
+    "summary": "No summary",
+    "url": "https://tratt.net/laurie/blog/2026/test_case_reducers_are_underappreciated_debugging_tools.html",
     "source": "hackernews"
   },
   {
@@ -90,33 +108,15 @@
     "source": "hackernews"
   },
   {
-    "title": "Biff.core: system composition for Clojure web apps",
+    "title": "Flat Datacenter Networks at Scale at Amazon",
     "summary": "No summary",
-    "url": "https://biffweb.com/p/core/",
+    "url": "https://perspectives.mvdirona.com/2026/06/flat-datacenter-networks-at-scale/",
     "source": "hackernews"
   },
   {
-    "title": "Can LLMs Beat Classical Hyperparameter Optimization Algorithms?",
+    "title": "CEOs Who Think AI Replaces Their Employees Are Just Bad CEOs",
     "summary": "No summary",
-    "url": "https://arxiv.org/abs/2603.24647",
-    "source": "hackernews"
-  },
-  {
-    "title": "Launch HN: Transload (YC P26) \u2013 Measuring freight items with CCTV",
-    "summary": "Hi HN \u2014 we\u2019re Julius, Jago, and Nils, and we\u2019re building transload (transload.io).<p>transload helps LTL trucking companies measure freight dimensions using the security cameras already installed in their terminals. Instead of sending shipments through a dedicated dimensioning station, we measure th",
-    "url": "https://news.ycombinator.com/item?id=48463273",
-    "source": "hackernews"
-  },
-  {
-    "title": "Is Grep All You Need? How Agent Harnesses Reshape Agentic Search",
-    "summary": "No summary",
-    "url": "https://arxiv.org/abs/2605.15184",
-    "source": "hackernews"
-  },
-  {
-    "title": "I Think Rutger Bregman and the School for Moral Ambition Are Full of Shit",
-    "summary": "No summary",
-    "url": "https://louwrentius.com/i-think-rutger-bregman-the-school-for-moral-ambition-are-full-of-shit.html",
+    "url": "https://www.techdirt.com/2026/06/09/ceos-who-think-ai-replaces-their-employees-are-just-bad-ceos/",
     "source": "hackernews"
   },
   {
@@ -132,9 +132,9 @@
     "source": "devto"
   },
   {
-    "title": "The perfect background music for Vibecoding...",
-    "summary": "While vibecoding, you sometimes need some background music. But music can also be a massive...",
-    "url": "https://dev.to/gdg/the-perfect-background-music-for-vibecoding-3edg",
+    "title": "AI Bots Are Driving Up Your Hosting Bill. I have a WordPress fix",
+    "summary": "A client called me last month, half panicked, after getting an email from his hosting provider. The...",
+    "url": "https://dev.to/phalkmin/ai-bots-are-driving-up-your-hosting-bill-i-have-a-wordpress-fix-7ih",
     "source": "devto"
   },
   {
@@ -144,39 +144,39 @@
     "source": "devto"
   },
   {
-    "title": "Gubernator visual schema.",
-    "summary": "Excited to share the latest feature built for Gubernator (gbnt): Visual Stack Topology &amp;...",
-    "url": "https://dev.to/gde/gubernator-visual-schema-1dfc",
-    "source": "devto"
-  },
-  {
-    "title": "one last peek \ud83d\udc40\ud83c\udf75 docs, a demo, and a goodbye for now",
-    "summary": "Hello, I'm Maneshwar. I'm building git-lrc, a Micro AI code reviewer that runs on every commit. It is...",
-    "url": "https://dev.to/lovestaco/one-last-peek-docs-a-demo-and-a-goodbye-for-now-4ddk",
-    "source": "devto"
-  },
-  {
-    "title": "The Estimate That Became a Quote",
-    "summary": "I said \"maybe a couple days\" on a call last Tuesday. By Wednesday morning it was in a Jira ticket as...",
-    "url": "https://dev.to/evanlausier/the-estimate-that-became-a-quote-98m",
-    "source": "devto"
-  },
-  {
     "title": "The Hidden Machinery Behind Background Jobs",
     "summary": "This will be a boring article today, but I wanted to write it after talking to a developer who...",
     "url": "https://dev.to/adamthedeveloper/the-hidden-machinery-behind-background-jobs-1g5a",
     "source": "devto"
   },
   {
-    "title": "AI Bots Are Driving Up Your Hosting Bill. I have a WordPress fix",
-    "summary": "A client called me last month, half panicked, after getting an email from his hosting provider. The...",
-    "url": "https://dev.to/phalkmin/ai-bots-are-driving-up-your-hosting-bill-i-have-a-wordpress-fix-7ih",
+    "title": "Gubernator visual schema.",
+    "summary": "Excited to share the latest feature built for Gubernator (gbnt): Visual Stack Topology &amp;...",
+    "url": "https://dev.to/gde/gubernator-visual-schema-1dfc",
     "source": "devto"
   },
   {
-    "title": "The Loop Is Not the Product",
-    "summary": "A tweet landed on my timeline from Peter Steinberger \u2014 OpenClaw founder, now at OpenAI:   \"Here's...",
-    "url": "https://dev.to/dannwaneri/the-loop-is-not-the-product-466d",
+    "title": "IMITATION: The Turing Test, From the Inside",
+    "summary": "This is a submission for the June Solstice Game Jam.           What I Built   IMITATION is a browser...",
+    "url": "https://dev.to/himanshu_748/imitation-the-turing-test-from-the-inside-3lce",
+    "source": "devto"
+  },
+  {
+    "title": "Sovereign Synapse: The Local Brain",
+    "summary": "A vault of 3,150 Markdown files is just a very organized digital attic. It\u2019s a repository of every...",
+    "url": "https://dev.to/kenwalger/sovereign-synapse-the-local-brain-51j9",
+    "source": "devto"
+  },
+  {
+    "title": "Swift Calls JSI Directly in Expo SDK 56: Removing the Objective-C++ Layer",
+    "summary": "SDK 56 makes JavaScript to native calls significantly faster on iOS by letting Swift talk to JSI...",
+    "url": "https://dev.to/expo/swift-calls-jsi-directly-in-expo-sdk-56-removing-the-objective-c-layer-33jc",
+    "source": "devto"
+  },
+  {
+    "title": "The Author Doesn't Have to Be an Engineer: How the Harness Holds Quality (Series Part 5)",
+    "summary": "Series Part 5. With the harness handling quality at the gate, the people closest to the requirements -- business-side managers, PMOs -- now open PRs to production directly, no engineer in between. Two recent examples (a deep root-cause fix and a +1,742 line feature build), the boundary of what they ",
+    "url": "https://dev.to/ryantsuji/the-author-doesnt-have-to-be-an-engineer-how-the-harness-holds-quality-series-part-5-12e4",
     "source": "devto"
   }
 ]
