@@ -22,7 +22,11 @@ app = FastAPI(title="personal.cafe API")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=[
+        "http://localhost:3000",
+        "https://personal-internet-barista.vercel.app/",   
+        "*"                               
+    ],
     allow_methods=["*"],
     allow_headers=["*"],
 )
