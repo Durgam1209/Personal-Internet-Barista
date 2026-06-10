@@ -1,0 +1,182 @@
+[
+  {
+    "title": "Everlyn-Labs/Everlyn-1",
+    "summary": "The first open autoregressive foundational video AI model.",
+    "url": "https://github.com/Everlyn-Labs/Everlyn-1",
+    "source": "github"
+  },
+  {
+    "title": "GAIR-NLP/O1-Journey",
+    "summary": "O1 Replication Journey",
+    "url": "https://github.com/GAIR-NLP/O1-Journey",
+    "source": "github"
+  },
+  {
+    "title": "lucidrains/self-rewarding-lm-pytorch",
+    "summary": "Implementation of the training framework proposed in Self-Rewarding Language Model, from MetaAI",
+    "url": "https://github.com/lucidrains/self-rewarding-lm-pytorch",
+    "source": "github"
+  },
+  {
+    "title": "maximal/http-267",
+    "summary": "HTTP 267 Doubtful But Okay",
+    "url": "https://github.com/maximal/http-267",
+    "source": "github"
+  },
+  {
+    "title": "Devin-AXIS/A2V",
+    "summary": "A2V: Next-Gen AI Value Compute Protocol.                                                                                 ",
+    "url": "https://github.com/Devin-AXIS/A2V",
+    "source": "github"
+  },
+  {
+    "title": "SweetCodey/system-design-masterclass",
+    "summary": "This material is based on the System Design Masterclass (2025) course available on Udemy. You can find the course here: System Design Masterclass. You can also find many free resources related to this on Sweet Codey Official Website.",
+    "url": "https://github.com/SweetCodey/system-design-masterclass",
+    "source": "github"
+  },
+  {
+    "title": "open-gigaai/giga-train",
+    "summary": "GigaTrain: An Efficient and Scalable Training Framework for AI Models",
+    "url": "https://github.com/open-gigaai/giga-train",
+    "source": "github"
+  },
+  {
+    "title": "levkk/rwf",
+    "summary": "Comprehensive framework for building web applications in Rust.",
+    "url": "https://github.com/levkk/rwf",
+    "source": "github"
+  },
+  {
+    "title": "henry123-boy/SpaTracker",
+    "summary": "[CVPR 2024 Highlight] Official PyTorch implementation of SpatialTracker: Tracking Any 2D Pixels in 3D Space",
+    "url": "https://github.com/henry123-boy/SpaTracker",
+    "source": "github"
+  },
+  {
+    "title": "nuno-faria/tetris-sql",
+    "summary": "Using SQL's Turing Completeness to Build Tetris",
+    "url": "https://github.com/nuno-faria/tetris-sql",
+    "source": "github"
+  },
+  {
+    "title": "macOS Container Machines",
+    "summary": "No summary",
+    "url": "https://github.com/apple/container/blob/main/docs/container-machine.md",
+    "source": "hackernews"
+  },
+  {
+    "title": "Claude Fable 5",
+    "summary": "System Card [pdf]: <a href=\"https:&#x2F;&#x2F;www-cdn.anthropic.com&#x2F;d00db56fa754a1b115b6dd7cb2e3c342ee809620.pdf\" rel=\"nofollow\">https:&#x2F;&#x2F;www-cdn.anthropic.com&#x2F;d00db56fa754a1b115b6dd7cb2e3c3...</a>",
+    "url": "https://www.anthropic.com/news/claude-fable-5-mythos-5",
+    "source": "hackernews"
+  },
+  {
+    "title": "Upcoming breaking changes for npm v12",
+    "summary": "No summary",
+    "url": "https://github.blog/changelog/2026-06-09-upcoming-breaking-changes-for-npm-v12/",
+    "source": "hackernews"
+  },
+  {
+    "title": "How do you design a $30k electric pickup? Inside Ford's skunkworks",
+    "summary": "No summary",
+    "url": "https://arstechnica.com/cars/2026/05/how-do-you-design-a-30000-electric-pickup-inside-fords-skunkworks/",
+    "source": "hackernews"
+  },
+  {
+    "title": "German ruling declares Google liable for false answers in AI Overviews",
+    "summary": "No summary",
+    "url": "https://the-decoder.com/landmark-german-ruling-declares-googles-ai-overviews-are-googles-own-words-and-makes-it-liable-for-false-answers/",
+    "source": "hackernews"
+  },
+  {
+    "title": "Rich Sutton on AI creativity and discovery",
+    "summary": "<a href=\"https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=K5LAFEjTlBA\" rel=\"nofollow\">https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=K5LAFEjTlBA</a>",
+    "url": "https://twitter.com/RichardSSutton/status/2061216087744946656",
+    "source": "hackernews"
+  },
+  {
+    "title": "RIP software hackathons. Long live the hardware hackathon",
+    "summary": "No summary",
+    "url": "https://blog.oscars.dev/posts/rip-software-hackathons-long-live-the-hardware-hackathon/",
+    "source": "hackernews"
+  },
+  {
+    "title": "Vibe coding my way to a healthy family: Introducing Gamow Labs",
+    "summary": "No summary",
+    "url": "https://www.ddmckinnon.com/2026/06/09/vibe-coding-my-way-to-a-healthy-family-introducing-gamow-labs/",
+    "source": "hackernews"
+  },
+  {
+    "title": "Ultrafast machine learning on FPGAs via Kolmogorov-Arnold Networks",
+    "summary": "<a href=\"https:&#x2F;&#x2F;web.archive.org&#x2F;web&#x2F;20260609200156&#x2F;https:&#x2F;&#x2F;aarushgupta.io&#x2F;posts&#x2F;kan-fpga&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;web.archive.org&#x2F;web&#x2F;20260609200156&#x2F;https:&#x2F;&#x2F;aarushgup...</a>",
+    "url": "https://aarushgupta.io/posts/kan-fpga/",
+    "source": "hackernews"
+  },
+  {
+    "title": "What it feels like to work with Mythos",
+    "summary": "No summary",
+    "url": "https://www.oneusefulthing.org/p/what-it-feels-like-to-work-with-mythos",
+    "source": "hackernews"
+  },
+  {
+    "title": "The Most Valuable Thing I Found in Tech Wasn't an Opportunity",
+    "summary": "TL;DR  As an international student in the United States, I joined tech communities hoping to find...",
+    "url": "https://dev.to/hemapriya_kanagala/the-most-valuable-thing-i-found-in-tech-wasnt-an-opportunity-2j83",
+    "source": "devto"
+  },
+  {
+    "title": "The 'Prompt' Is Not a Skill \u2014 And We Need to Stop Pretending",
+    "summary": "Writing a prompt isn't engineering. It's typing.  You type what you want. The AI figures out the rest...",
+    "url": "https://dev.to/harsh2644/the-prompt-is-not-a-skill-and-we-need-to-stop-pretending-3m18",
+    "source": "devto"
+  },
+  {
+    "title": "AI Bots Are Driving Up Your Hosting Bill. I have a WordPress fix",
+    "summary": "A client called me last month, half panicked, after getting an email from his hosting provider. The...",
+    "url": "https://dev.to/phalkmin/ai-bots-are-driving-up-your-hosting-bill-i-have-a-wordpress-fix-7ih",
+    "source": "devto"
+  },
+  {
+    "title": "It Worked on My Machine (Literally)",
+    "summary": "I have a TRMNL on my desk. If you haven't seen one, it's a little e-ink display from trmnl.com that...",
+    "url": "https://dev.to/cseeman/it-worked-on-my-machine-literally-4ekn",
+    "source": "devto"
+  },
+  {
+    "title": "Gubernator visual schema.",
+    "summary": "Excited to share the latest feature built for Gubernator (gbnt): Visual Stack Topology &amp;...",
+    "url": "https://dev.to/gde/gubernator-visual-schema-1dfc",
+    "source": "devto"
+  },
+  {
+    "title": "The Messages Array, in 4 GIFs",
+    "summary": "This is the third post of series Building TinyAgent where we are building a small agent from scratch...",
+    "url": "https://dev.to/jasmin/the-messages-array-in-4-gifs-1k1j",
+    "source": "devto"
+  },
+  {
+    "title": "How we built AIventure, an AI-Powered Retro Dungeon",
+    "summary": "Grab a refreshing slice of cold watermelon (because it\u2019s summer in Tokyo and I love it!), and let me...",
+    "url": "https://dev.to/googleai/how-we-built-aiventure-an-ai-powered-retro-dungeon-2f54",
+    "source": "devto"
+  },
+  {
+    "title": "The Loop Is Not the Product",
+    "summary": "A tweet landed on my timeline from Peter Steinberger \u2014 OpenClaw founder, now at OpenAI:   \"Here's...",
+    "url": "https://dev.to/dannwaneri/the-loop-is-not-the-product-466d",
+    "source": "devto"
+  },
+  {
+    "title": "Sovereign Synapse: The Local Brain",
+    "summary": "A vault of 3,150 Markdown files is just a very organized digital attic. It\u2019s a repository of every...",
+    "url": "https://dev.to/kenwalger/sovereign-synapse-the-local-brain-51j9",
+    "source": "devto"
+  },
+  {
+    "title": "Who's Going To RubyConf 2026?",
+    "summary": "RubyConf holds a special place in my heart. It was the very first tech conference I attended after...",
+    "url": "https://dev.to/yechielk/whos-going-to-rubyconf-2026-4j1a",
+    "source": "devto"
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "generated_at": "2025-11-02",
+  "espresso": {
+    "headline": "Exo lets anyone run frontier AI models directly on their own hardware.",
+    "body": "Exo provides a lightweight framework for executing state\u2011of\u2011the\u2011art AI models locally without cloud dependencies. It abstracts hardware acceleration and model loading, enabling rapid prototyping on consumer devices. This democratizes access to advanced AI capabilities for developers and researchers.",
+    "source_url": "https://github.com/exo-explore/exo"
+  },
+  "cold_brew": {
+    "title": "Run Frontier AI Locally",
+    "summary": "Exo is an open\u2011source platform that enables the execution of cutting\u2011edge AI models on modest hardware by handling model compilation, memory management, and runtime scheduling. By abstracting the complexities of GPU/CPU utilization and offering a simple CLI, it allows developers to experiment with large models without needing expensive cloud resources. This approach accelerates research cycles and reduces reliance on external services.",
+    "takeaways": [
+      "Local execution removes latency and cost associated with cloud APIs.",
+      "The framework handles low\u2011level optimizations, making advanced models accessible on consumer devices.",
+      "Simplified tooling speeds up prototyping and lowers the barrier to AI innovation."
+    ],
+    "source_url": "https://github.com/exo-explore/exo"
+  },
+  "pastry": {
+    "title": "exo",
+    "why_it_matters": "Exo empowers engineers to run frontier AI models on local hardware, eliminating reliance on costly cloud services. This accessibility fosters experimentation and speeds up development cycles for AI\u2011intensive applications.",
+    "link": "https://github.com/exo-explore/exo"
+  }
+}
